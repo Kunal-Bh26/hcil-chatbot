@@ -63,7 +63,7 @@ export default function App() {
             setMessages(prev => [...prev, { role: 'bot', content: data.response }]);
         } catch (error) {
             console.error("Failed to fetch from API:", error);
-            setMessages(prev => [...prev, { role: 'bot', content: "Soorry, I'm having trouble connecting. Please try again later." }]);
+            setMessages(prev => [...prev, { role: 'bot', content: "I'm having trouble connecting. Please try again later." }]);
         } finally {
             setIsLoading(false);
         }
@@ -76,7 +76,7 @@ export default function App() {
         setTimeout(() => {
             setMessages([{
                 role: 'bot',
-                content: "Koonichiwa! I am your dedicated IT Helpdesk assistant. How may I help you today?"
+                content: "Greetings! I am your dedicated IT Helpdesk assistant. How may I help you today?"
             }]);
             setIsLoading(false);
         }, 1000);
@@ -223,5 +223,6 @@ export default function App() {
         </div>
     );
 }
+
 
 
