@@ -10,7 +10,7 @@ CORS(app)
 
 # --- Render Persistent Disk Configuration ---
 # Render provides a persistent disk at /var/data. We'll use it for our cache.
-CACHE_DIR = '/var/data/st_cache'
+CACHE_DIR = '/tmp/st_cache' # Use the temporary directory
 KNOWLEDGE_BASE_PATH = 'dataset.csv'
 os.makedirs(CACHE_DIR, exist_ok=True)
 
@@ -109,4 +109,5 @@ def chat():
 
 # This block is for local development only
 if __name__ == '__main__':
+
     app.run(debug=True, port=5001)
