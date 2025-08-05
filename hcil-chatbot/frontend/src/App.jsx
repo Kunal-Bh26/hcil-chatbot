@@ -76,7 +76,7 @@ export default function App() {
         setTimeout(() => {
             setMessages([{
                 role: 'bot',
-                content: "Greetings! I am your dedicated IT support assistant. How may I help you today?"
+                content: "Konichiwa! I am your dedicated IT Helpdesk assistant. How may I help you today?"
             }]);
             setIsLoading(false);
         }, 1000);
@@ -223,3 +223,4 @@ export default function App() {
         </div>
     );
 }
+
