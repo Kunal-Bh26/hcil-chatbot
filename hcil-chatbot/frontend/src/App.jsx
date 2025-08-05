@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BotAvatar, UserAvatar } from './components/Avatars';
-import { SkeletonLoader } from './components/Loader';
-import { SmartReplies } from './components/SmartReplies';
-import ChatBubble from './components/ChatBubble';
+import { BotAvatar, UserAvatar } from './components/Avatars.jsx';
+import { SkeletonLoader } from './components/Loader.jsx';
+import { SmartReplies } from './components/SmartReplies.jsx';
+import ChatBubble from './components/ChatBubble.jsx';
 
 // In production, Vercel will use the environment variable you set.
 // For local testing, it falls back to the local Python server's address.
@@ -155,4 +155,5 @@ export default function App() {
             </main>
         </div>
     );
+
 }
